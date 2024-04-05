@@ -58,9 +58,11 @@ function Navbar() {
             </a>
             <button className="primary-button">Bookings Now</button>
         </div>
+        {/* Гамбургер */}
         <div className="navbar-menu-container">
             <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
         </div>
+        {/* Адаптивность */}
         <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
             <Box
                 sx={{ width: 250 }}
